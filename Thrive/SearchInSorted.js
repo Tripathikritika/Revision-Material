@@ -5,27 +5,10 @@ function runProgram(input){
     let [size , target] = input[0].trim().split(" ").map(Number)
     let array = input[1].trim().split(" ").map(Number)
     
-    let res = binarySearch(array,target)
-    console.log(res)
-
-    function binarySearch( array ,k ){
-
-        let lo = 0 
-        let high = size - 1    
-        while( lo <= high ){
-            let mid = lo + Math.floor((high-lo)/2)
-            if(array[mid] === k){
-                return mid
-            }
-            else if( array[mid] < k){
-                lo = mid + 1 
-            }
-            else{
-                high = mid - 1
-            }
-        }
-        return -1
-    }
+    let lo = 0 
+    let high = size - 1   
+    let mid = lo + Math.floor((high-lo)/2)
+    
   
 }
 // process.stdin.resume();
@@ -45,5 +28,5 @@ function runProgram(input){
 //     process.exit(0);
 // });
 
-runProgram(`5 1
-3 4 5 1 2`)
+runProgram(`20 12
+18 19 21 22 23 24 29 30 -1 -10 -9 -8 -7 -6 -4 -3 7 10 11 12`)

@@ -11,21 +11,29 @@ function runProgram(input){
         let res = subArrayFunc(array , m)
         console.log(res)
     }
+    //1 5 1 3 2
   
     function subArrayFunc(arr , m) {
-        console.log(m)
-        let count = 0
-        for(let i = 0 ; i < arr.length ; i++){
-            for( let j = i ; j < arr.length ; j++){
-                let subArray = arr.slice(i,j+1)
-                let subSum = subArray.reduce((a,c) => a+c )
-                console.log({subSum})
-                if( subSum < m ){
-                    count++
+        let i = 0 
+        let j = 0 
+        let sum = arr[0]
+        let count = 0 
+        while( i < arr.length && j < arr.length){
+            if(sum < m){
+                j++
+                if( j >= i){
+                    count += j-i
+                }
+                if( j < arr.length){
+                    sum += arr[j]
                 }
             }
+            else{
+                sum -= arr[i]
+                i++
+            }
         }
-        return count  
+        return count
     }
 }
 process.stdin.resume();
