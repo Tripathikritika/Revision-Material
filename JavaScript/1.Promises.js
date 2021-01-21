@@ -9,9 +9,13 @@ SYNTAX=> const prom = new Promises((res) => {
 })
 prom.then((val) => {//description})
 prom.catch((err) => {//description})
+.
 
-Why promises----- Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
-PROMISES.ALL ----- It takes and array of promises as an input and it gets resolved once when all the promises gets resolved or any one of them get rejected.Order is maintained as per as input order
+Why promises----- Promises are used to handle asynchronous operations. 
+They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
+PROMISES.ALL ----- It takes and array of promises as an input and 
+it gets resolved once when all the promises gets resolved or any one of them get rejected.
+Order is maintained as per as input order
 Syntax-> Promise.all([Promise1,Promise2,Pormise2])
             .then((val) => {console.log(val)})
             .catch((err) => console.log(err))
