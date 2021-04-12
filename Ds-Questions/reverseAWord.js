@@ -7,10 +7,10 @@ function runProgram( str ){
         str[i] = str[str.length-1-i] 
         str[str.length-1-i] = temp
     }
-    console.log(str)
+    console.log(str.join(" "))
 }
 
-runProgram("A Happy life")
+runProgram("A Transformation in education")
 
 // life happy a
 // a yppah egil

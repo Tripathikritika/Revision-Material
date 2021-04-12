@@ -1,0 +1,51 @@
+1)
+2) What is dom?
+3) What is query selector 
+4) what is event.prevent default
+5) What are es6? Name some es6 stuffs
+6) Name 10 css properties
+7) What are combinators 
+8) What are specificity
+9) what is z-index and position
+10) Why to write css link in head and js script in body?
+11) What is TC ?
+12)  int a = 0, i = N;
+
+while (i > 0) {
+
+    a += i;
+
+    i /= 2;
+
+}
+==> O(longn)
+
+13) int a = 0, b = 0; 
+    for (i = 0; i < N; i++) { 
+        a = a + rand(); 
+    } 
+    for (j = 0; j < M; j++) { 
+        b = b + rand(); 
+    } 
+
+==> Tc : O(N + M)
+==> SC : O(1)
+14) What is difference between while and do-while
+
+15) Write a program to find sum of all prime numbers present in the array
+
+16)  Write a program to print all substrings of a string
+
+17) what is JS? Synchronous or asycnchronous? Single or multithreades
+
+18) What is Currying in Javascript?Eg
+
+19) Event loop
+
+20) What is Strict Mode in Javascript? Eg and also explain hoisting
+
+21) What is Call Apply and Bind?
+
+22) console.log(typeof typeof typeof true); => string
+console.log(NaN === NaN) => false 
+console.log([1, 2] + [3, 4]) => 1,23,4
